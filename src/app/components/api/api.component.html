@@ -1,1 +1,15 @@
-<p>api works!</p>
+<p>Podaj imie:</p>
+<label>
+  <input type="text" #name>
+</label>
+<button (click)="sayHello(name.value)">Przywitaj się</button>
+<p></p>
+{{messageForUser}}
+<h2>API Jokes: </h2>
+<p></p>
+{{rootObject| json}}
+<h2>API Bored: </h2>
+<p></p>
+{{rootObject1 | json}}
+
+
